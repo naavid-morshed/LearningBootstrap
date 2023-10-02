@@ -17,4 +17,5 @@ bootstrap param descriptions:
     -set text color 
 4. my-5
     -margin on top and bottom (denoted by y), value doesn't go over 5?
-5. 
+5. col-md-5
+    - col-SIZE-NUMBER
