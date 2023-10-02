@@ -3,6 +3,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 //
 
+PROBLEMS FACED:
+    1. alerts after images shows alerts over image [both are separated by different bodies] [but having alert before image does not cause this problem]
+        - reason: default bootstrap behavior
+        - solution: use fixed-bottom class
+
 available classes
     - container
     - row
@@ -21,7 +26,8 @@ available classes
         of
         codes
     </pre>
-8.  <table class = "table"> [defines table] [might want to wrap table with container]
+8.  <table class = "table"> [defines table] [might want to wrap table with container] [options for table, -hover -dark -striped, -bordered (must add table before all flags)]
+                            [-responsive flag for scrollbar]
         <thead> [table header]
             <tr> [table row]
                 <td> [table data]
@@ -34,6 +40,12 @@ available classes
             [inside similiar to thead, need to explore combinations]
         </tbody>
     </table>
+9. <img height="200px" width="200px" src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="rounded-circle" alt="Cinque Terre">
+    [image from online and their shapes] [class="float-start" or end for aligning to left or right]
+    [class = "img-fluid" to let bootstrap decide how to make image responsive]
+10. <strong> BOLD </strong> 
+11. 
+
 
 ** bootstrap param descriptions:
 1. pt-5
