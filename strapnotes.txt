@@ -8,7 +8,34 @@ available classes
     - row
     - column
 
-bootstrap param descriptions:
+** tags descriptions:
+1. <small> for smaller text inside other texts, or can be used as a class </small>
+2. <mark> for highlighting text </mark>
+3. <abbr> dotted bottom border </abbr>
+4. <blockquote> for quoting sources and citations </blockquote>
+5. <dd> for tab space? </dd> [check later]
+6. <kbd> for highlihgting keyboard combinations </kbd>
+7. <pre> for 
+        multiple
+        lines
+        of
+        codes
+    </pre>
+8.  <table class = "table"> [defines table] [might want to wrap table with container]
+        <thead> [table header]
+            <tr> [table row]
+                <td> [table data]
+            
+                </td>
+            </tr>
+        </thead>
+
+        <tbody> [table body]
+            [inside similiar to thead, need to explore combinations]
+        </tbody>
+    </table>
+
+** bootstrap param descriptions:
 1. pt-5
     -padding top(y for top and bottom), amount 5
 2. bg-black
@@ -19,3 +46,6 @@ bootstrap param descriptions:
     -margin on top and bottom (denoted by y), value doesn't go over 5?
 5. col-md-5
     - col-SIZE-NUMBER
+6. text-bg-color
+    - lets bootstrap handle text color based on bg color
+7. 
