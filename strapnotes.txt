@@ -7,11 +7,17 @@ PROBLEMS FACED:
     1. alerts after images shows alerts over image [both are separated by different bodies] [but having alert before image does not cause this problem]
         - reason: default bootstrap behavior
         - solution: use fixed-bottom class
+    2. grouped buttons are inline and wants to say in a row
+        - reason: N/A
+        - WILL FIND SOLUTIONS LATER
 
 available classes
     - container
     - row
     - column
+    - alert
+
+[read spinners later]
 
 ** tags descriptions:
 1. <small> for smaller text inside other texts, or can be used as a class </small>
@@ -44,18 +50,23 @@ available classes
     [image from online and their shapes] [class="float-start" or end for aligning to left or right]
     [class = "img-fluid" to let bootstrap decide how to make image responsive]
 10. <strong> BOLD </strong> 
-11. 
+11. <a href="https://link.com" class="alert-link"> clicking here will open link.com </a>
+12. <button> can be used in tandem with alerts </button>
+13. <span> is used to color a part of a text </span>
+14. <div class="progress" style="height: 20px"> 
+        <!-- 40% is in the middle of 40% width -->
+      <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+    </div>  [self explanatory]
 
-
-** bootstrap param descriptions:
+** bootstrap param descriptions: [refer to docs]
 1. pt-5
-    -padding top(y for top and bottom), amount 5
+    - padding top(y for top and bottom), amount 5
 2. bg-black
-    -background black
+    - background black
 3. text-white
-    -set text color 
+    - set text color 
 4. my-5
-    -margin on top and bottom (denoted by y), value doesn't go over 5?
+    - margin on top and bottom (denoted by y), value doesn't go over 5?
 5. col-md-5
     - col-SIZE-NUMBER
 6. text-bg-color
