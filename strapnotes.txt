@@ -25,7 +25,8 @@ available classes
     - alert
     - more [boatload of classes, check docs]
     - dropdown [usual cases are covered in dropdownmenu.html, check https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php for more]
-    - nav []
+    - nav [use it to specify navigation via link]
+    - navbar [A navigation bar is a navigation header that is placed at the top of the page]
 
 [read spinners later]
 
