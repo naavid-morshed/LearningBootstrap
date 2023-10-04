@@ -13,10 +13,18 @@ PROBLEMS FACED:
         - solution: use fixed-bottom class
     2. grouped buttons are inline and wants to say in a row
         - reason: no clue
-        - WILL FIND SOLUTIONS LATER [div will most likely fix it]
+        - unsolved [div will most likely fix it]
     3. refer to dropdownmenu.html, not using li for specifying list item does not break anything
         - reason: html shenanigans??
-        - WILL FIND SOLUTIONS LATER
+        - solution: even though li is not needed, it should still be used, mostly for convention
+    4. could not build collapsible navigation bar, will attempt it soon. w3schools does not have it or have it wrong.
+    5. check carousel.html. if picture fails to load then the left right direction buttons also fails.
+        - reason: because buttons are printed over the carousel images?
+        - unsolved
+    6. extension of problem 5, carousel.html behaves responsively unless site is minimized too much then the 
+       carousel pictures return to their full size.
+        - reason: NO CLUE
+        - unsolved
 
 available classes
     - container
@@ -27,6 +35,9 @@ available classes
     - dropdown [usual cases are covered in dropdownmenu.html, check https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php for more]
     - nav [use it to specify navigation via link]
     - navbar [A navigation bar is a navigation header that is placed at the top of the page]
+      [https://www.w3schools.com/bootstrap5/bootstrap_navbar.php#] [colossal class, need to practice]
+    - carousel class for slideshow [example and explanations are in carousel.html] [what is class="d-block w-100"?]
+     [class="d-block w-100" is a class in Bootstrap that allows designers to create full-width, block-level elements]
 
 [read spinners later]
 
@@ -60,7 +71,7 @@ available classes
 9. <img height="200px" width="200px" src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="rounded-circle" alt="Cinque Terre">
     [image from online and their shapes] [class="float-start" or end for aligning to left or right]
     [class = "img-fluid" to let bootstrap decide how to make image responsive]
-10. <strong> BOLD </strong> 
+10. <strong> BOLD </strong>
 11. <a href="https://link.com" class="alert-link"> clicking here will open link.com </a>
 12. <button> can be used in tandem with alerts </button>
 13. <span> is used to color a part of a text </span>
@@ -74,22 +85,41 @@ available classes
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul> [self explanatory] [pagination flags: justify-content-center || justify-content-end]
+    </ul> [self explanatory] [pagination flags: justify-content-center || justify-content-end]
 16. for list tag refer to lists.html
 17. for cards tag refer to cards.html [check card content header footer and their borders]
     [wrapping with (div class="card-img-overlay") will add image to the background]
-18. <nav> use this to specify navigation </nav>
+18. 
+<nav class="navbar navbar-expand-sm bg-light"> [first define that it's a navbar] [use "fixed-top" for fixed position]
+  <div class="container-fluid">
+    <!-- Links -->
+    <ul class="navbar-nav"> [then define that the navbar will contain unordered list items]
+      <li class="nav-item"> [then define that the list items are nav items]
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+[check difference between vertical and horizontal navbar, it is vertical by default, adding "navbar-expand-sm" makes it horizontal]
+
 ** bootstrap param descriptions: [refer to docs]
 1. pt-5
     - padding top(y for top and bottom), amount 5
 2. bg-black
     - background black
 3. text-white
-    - set text color 
+    - set text color
 4. my-5
     - margin on top and bottom (denoted by y), value doesn't go over 5?
 5. col-md-5
     - col-SIZE-NUMBER
 6. text-bg-color
     - lets bootstrap handle text color based on bg color
-7. 
+7. ms, me, ps, pe, pt, pb, py [s = start, b = bottom, e = end]
