@@ -1,6 +1,13 @@
-// ! for boilerplate, then add these two lines before /head 
+// ! for boilerplate, then add these two lines before /head for bootstrap content delivery network
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script> [use this portion of script at the end of code for js dependancy injection]
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
 //
 
 NOTE FOR FUTURE ME: 
@@ -25,6 +32,10 @@ PROBLEMS FACED:
        carousel pictures return to their full size.
         - reason: NO CLUE
         - unsolved
+    7. tooltip position does not work if wrapped with container
+        - reason: container wraps the [data-bs-toggle="tooltip"] tightly and make it completely rigid
+        - solution: no need to use container for margin, padding and border; it can achieved through class
+        - confusion: what if container has to be wrapped over tooltip?
 
 available classes
     - container
@@ -37,8 +48,10 @@ available classes
     - navbar [A navigation bar is a navigation header that is placed at the top of the page]
       [https://www.w3schools.com/bootstrap5/bootstrap_navbar.php#] [colossal class, need to practice]
     - carousel class for slideshow [example and explanations are in carousel.html] [what is class="d-block w-100"?]
-     [class="d-block w-100" is a class in Bootstrap that allows designers to create full-width, block-level elements]
-
+     [class="d-block w-100": width 100, d-block means block-level elements]
+     [class="carousel-caption" is used inside carousel item with headers and paragraphs]
+    - modal [works like showModal in flutter, read modal.html for example]
+    - 
 [read spinners later]
 
 ** tags descriptions:
