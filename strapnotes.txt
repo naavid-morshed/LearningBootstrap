@@ -15,6 +15,9 @@ NOTE FOR FUTURE ME:
     2. Not using a lot of tags does not break anything but they should be used for convention.
     3. Use Flex and float
     4. Use Font Awesome for easy icons
+    5. put everything is a div (assume base div is a scaffold)
+    6. use colspan attribute in table to have one cell take space for multiple
+    7. font awesome - check w3schools for docs, fa needs account and a key for icons to load
 
 PROBLEMS FACED:
     1. alerts after images shows alerts over image [both are separated by different bodies] [but having alert before image does not cause this problem]
