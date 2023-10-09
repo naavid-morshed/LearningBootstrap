@@ -10,6 +10,11 @@
   </script>
 //
 
+1. NID
+2. Electricity Bill (Present address)
+3. Job/Student/Internship photocopy
+4. Kakrail Branch
+
 NOTE FOR FUTURE ME: 
     1. Few Mistakes in the initial files, added div when there were no need and made some other small mistakes. Read the files carefully.
     2. Not using a lot of tags does not break anything but they should be used for convention.
