@@ -124,6 +124,15 @@ available classes
     </ul>
   </div>
 </nav>
+19. use form-label class in <label></label> to define label, refer it to an existing id with for [refer to handling_forms.html]
+20. use form-control for textarea tag or input tag to define them for input, generate id with id="" [refer to handling_forms.html]
+21. use <select> tag for dropdown, use option tag inside to select them:
+    <label for="id4" class="form-label">Choose your options</label>
+    <select class="form-select py-1" id="id4">
+        <option>asd</option>
+        <option selected>asdfadsf</option>
+        <option>dea</option>
+    </select>
 
 [check difference between vertical and horizontal navbar, it is vertical by default, adding "navbar-expand-sm" makes it horizontal]
 

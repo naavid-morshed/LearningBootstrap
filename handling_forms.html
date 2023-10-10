@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd0540306e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <!-- form-label is used by label tag -->
+        <!-- form-control is used by input, textarea -->
+        <div class="row justify-content-center my-2">
+            <div class="col-6 mb-2">
+
+                <form>
+                    <label for="id1" class="form-label">Email label</label>
+                    <input type="email" class="form-control" id="id1" placeholder="type your mail here:"
+                        aria-describedby="formtextid1">
+                    <div class="form-text mb-2" id="formtextid1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Eaque exercitationem maxime totam odio officia excepturi expedita quibusdam iste, quaerat dicta
+                        in modi temporibus obcaecati vel, enim alias adipisci ad! Fugit!
+                    </div>
+
+                    <label for="id2" class="form-label">Text label</label>
+                    <input type="text" class="form-control" id="id2" placeholder="type some text here:">
+
+                    <label for="id4" class="form-label">Choose your options</label>
+                    <select class="form-select py-1" id="id4">
+                        <option>asd</option>
+                        <option selected>asdfadsf</option>
+                        <option>dea</option>
+                    </select>
+
+
+                    <label for="id5" class="form-label">Label for text area</label>
+                    <textarea id="id5" class="form-control">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequuntur debitis labore qui aspernatur rerum quam asperiores sed, ut voluptatibus rem maxime et quia atque hic laborum harum libero porro!
+                    </textarea>
+
+                    <!-- bad practice, do not rewrite this -->
+                    <div class="container-fluid px-0 mb-5">
+                        <div class="float-start">
+                            <input class="m-0 me-2" type="radio" id="id6">
+                        </div>
+                        <div class="float-start p-0 m-0">
+                            <label for="id6" class="form-label p-0 m-0">Radio</label>
+
+                        </div>
+                    </div>
+                    <label class="radio-inline"><input type="radio" checked>Option 1</label>
+                    <label><input class="m-0 me-2" type="checkbox">Checkbox label</label>
+
+                    <div class="form-floating my-4">
+                        <textarea id="id7" class="form-control"></textarea>
+                        <label for="id7" class="form-label">Label for text area</label>
+                    </div>
+
+                    <div class="input-group mb-5">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text mb-0" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">$$</span>
+
+                    </div>
+                    
+                    <div class="form-outline">
+                        <input type="number" id="id8">
+                        <label for="id8" class="form-label">Select a number</label>
+                    </div>
+                    <div class="form-outline">
+                        <input type="date" id="id9">
+                        <label for="id9" class="form-label">Select a date</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
